@@ -1,0 +1,32 @@
+flowchart TD
+
+A[Gmail Trigger] --> B[Normalize Email]
+
+B --> C[Extract Order ID (Regex)]
+C --> D{Order ID Found?}
+
+D -- No --> E[Set source = unknown]
+D -- Yes --> F[Detect Platform]
+
+F --> G{Platform}
+
+G -- Shopify --> H[HTTP Node: Shopify API]
+G -- Bol --> I[HTTP Node: Bol API]
+G -- Unknown --> J[Skip API Fetch]
+
+H --> K[Build SupportContext]
+I --> K
+J --> K
+E --> K
+
+K --> L[AI Draft Generator]
+
+L --> M{Errors Present?}
+
+M -- Yes --> N[Append Technical Notice to Draft]
+M -- No --> O[Continue]
+
+N --> P[Gmail Create Draft]
+O --> P
+
+P --> Q[Add Label: AI-Drafted]
