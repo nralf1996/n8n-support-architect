@@ -1,0 +1,22 @@
+[
+  {
+    "from": "automail@bol.com",
+    "subject": "Reactie ontvangen op een klantvraag",
+    "body": "Bestelnummer C0000HWH67"
+  },
+  {
+    "from": "customer@gmail.com",
+    "subject": "Over jouw bestelling C0000HWH67 van YAR-Trading via bol.com",
+    "body": "Hallo ik heb een probleem."
+  },
+  {
+    "from": "customer@gmail.com",
+    "subject": "Bestelling #1045",
+    "body": "Mijn bestelling #1045 is vertraagd."
+  },
+  {
+    "from": "random@gmail.com",
+    "subject": "Vraag",
+    "body": "Ik heb een vraag zonder ordernummer."
+  }
+]

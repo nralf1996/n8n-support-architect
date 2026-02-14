@@ -1,0 +1,28 @@
+{
+  "name": "n8n-support-architect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nralf1996/n8n-support-architect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nralf1996/n8n-support-architect/issues"
+  },
+  "homepage": "https://github.com/nralf1996/n8n-support-architect#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}
